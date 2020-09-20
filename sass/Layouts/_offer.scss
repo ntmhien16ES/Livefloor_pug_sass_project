@@ -1,0 +1,47 @@
+.offer {
+    padding: 9.6rem 0;
+    .row {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .offer__item {
+        width: 50%;
+        padding: 0 1.5rem;
+        &:first-child {
+            padding-right: 4.8rem;
+            img {
+                border-radius: 10px;
+            }
+        }
+        p {
+            margin: 1.5rem 0 3.5rem;
+        }
+        ul {
+            li {
+                margin: 1.5rem 0;
+                color: $heading-color;
+                font-weight: 700;
+                i {
+                    font-size: 1rem;
+                    margin-right: 1.2rem;
+                    color: $secondary-color;
+                    background-color: $bg-light;
+                    padding: .8rem;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    @include responsive('large') {
+        .offer__item {
+            width: 100%;
+            &:first-child {
+                padding: 0 1.5rem;
+                margin-bottom: 4.8rem;
+            }
+        }
+    }
+    @include responsive('medium') {
+        padding: 4.8rem 0;
+    }
+}

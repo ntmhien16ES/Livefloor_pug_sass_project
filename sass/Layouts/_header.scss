@@ -1,0 +1,107 @@
+.header {
+    padding: 1.5rem 0;
+    position: fixed;
+    width: 100%;
+    background-color: $bg-color;
+    z-index: 10;
+    &__logo {
+        margin-right: 3rem;
+        a {
+            font-size: 3.4rem;
+            color: $secondary-color;
+            font-weight: 700;
+        }
+    }
+    &__nav {
+        li {
+            float: left;
+            margin: 0 1rem;
+            font-weight: 500;
+            color: $logo-color;
+            position: relative;
+            transition: .3s ease-in;
+            cursor: pointer;
+            &:first-child, &:hover {
+                color: $secondary-color;
+                
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                height: 2px;
+                width: 0%;
+                background: $secondary-color;
+                transition: .3s ease-in;
+                z-index: 10;
+            }
+            &:hover::after {
+                width: 100%;
+            }
+        }
+    }
+        
+    &__menu, #navbar_toggler {
+        display: none;
+    }
+    &__btn {
+        margin: 0 0 0 auto;
+        a {
+            padding: 1.5rem 3.6rem;
+            color: $bg-color;
+            background-color: $secondary-color;
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 2.8rem;
+            transition: .3s ease-in;
+            border-radius: $border-radius;
+            &:hover {
+                background-color: $primary-color;
+            }
+            &:active {
+                background-color: #F41F0B;
+            }
+        }
+    }
+    @include responsive("large") {
+        padding: 1rem 0;
+        .row {
+            justify-content: space-between;
+        }
+        .header__btn {
+            display: none;
+        }
+        .header__menu {
+            display: block;
+            height: 20px;
+            i {
+                font-size: 2.1rem;
+                background-color: $primary-color;
+                color: $bg-color;
+                padding: .6rem .8rem;
+                border-radius: 5px;
+                // display: inline-block;
+            }
+        }
+        .header__nav {
+            display: none;
+            height: 0;
+            transition: .5s ease-in;
+        }
+        #navbar_toggler:checked+.header__nav {
+            display: block;
+            background-color: var(--background-white);
+            padding: 1.5rem 0;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            transition: .5s ease-in;
+            li {
+                display: block;
+                margin: .8rem 0; 
+                width: 100%;
+            }
+        }
+    }
+}

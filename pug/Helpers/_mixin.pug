@@ -1,0 +1,24 @@
+mixin number__item(num, title)
+    .number__item
+        p= num
+        h4= title 
+
+mixin process__item(srcImg, title, desc)
+    .process__item
+        img(src= srcImg, alt="")
+        h4= title
+        p= desc
+
+mixin choose__item(iconClass, title, desc)
+    .choose__item
+        span(class= iconClass)
+        h3= title
+        p= desc
+        a(href="#") Read More
+            i.fa.fa-arrow-right
+        
+mixin footer_contact_item(iconClass, address)
+    ul
+        li
+            i(class= iconClass)
+            span= address

@@ -1,0 +1,44 @@
+.choose {
+    padding: 9.6rem 0;
+    text-align: center;
+    background-color: $bg-light;
+    .row {
+        padding-left: -15px;
+        padding-right: -15px;
+    }
+    
+    .choose__item {
+        width: 25%;
+        padding: 0 1.5rem;
+        margin-top: 4.8rem;
+        span {
+            display: block;
+            font-size: 3.5rem;
+            color: $secondary-color;
+            margin-bottom: 3rem;
+        }
+        h3 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            line-height: 2.6rem;
+            color: $heading-color;
+        }
+        p {
+            margin: 1.5rem 0 2rem;
+        }
+        a {
+            @include readMore;
+        }
+    }
+    @include responsive('large') {
+        .choose__item {
+            width: 50%;
+        }
+    }
+    @include responsive('medium') {
+        padding: 4.8rem 0;
+        .choose__item {
+            width: 100%;
+        }
+    }
+}

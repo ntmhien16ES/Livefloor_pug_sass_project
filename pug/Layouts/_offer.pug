@@ -1,0 +1,14 @@
+section.offer
+    .container
+        .row
+            .offer__item
+                img(src="../images/g3.jpg", alt="")
+            .offer__item
+                h6.sub-title WHAT WE DO
+                h3.big-title What We Offer For You
+                p Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                ul
+                    each val in offer_list
+                        li
+                            i.fa.fa-check
+                            = val

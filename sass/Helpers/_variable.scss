@@ -1,0 +1,35 @@
+$primary-color: #011627;
+$secondary-color: #ff9f1c;
+$font-color: #696969;
+$bg-color: #fff;
+
+$heading-color: #151b1d;
+$logo-color: #151b1d;
+$nav-color:  #292922;
+$dropdown-color:  #fff;
+
+// background color
+$bg-light:  rgba(147, 107, 232, 0.05);
+$bg-light-1:  rgba(255, 255, 255, 0.15);
+
+$iframe-filter:  grayscale(0%);
+$widget-bg:  #3f3a64;
+
+// border
+$border-color:  #ddd;
+$border-light:  #E9E6E3;
+$border-radius:  25px;
+$border-radius-1:  8px;
+
+// footer
+$footer-bg:  #011627;
+$footer-light: #011b2f;
+
+//break points
+$breakpoints:(
+    'extra-large':1200px,
+    'small-large': 1035px,
+    'large':992px,
+    'medium':768px,
+    'small':576px,
+)

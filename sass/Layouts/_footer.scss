@@ -1,0 +1,110 @@
+.footer {
+    .footer__top {
+        padding: 9.6rem 0;
+        background-color: $footer-bg;
+        .row {
+            align-items: flex-start;
+        }
+        h6 {
+            color: white;
+            font-size: 2.4rem;
+            line-height: 2.6rem;
+            text-transform: capitalize;
+            margin-bottom: 2.5rem;
+            font-weight: 700;
+        }
+        li {
+            margin-bottom: 1.4rem;
+            a {
+                color: #6e747b;
+                font-size: 1.6rem;
+                line-height: 2.6rem;
+            }
+        }
+        .footer__about {
+            width: calc((4/12)*100%);
+            p {
+                color: #ababab;
+                padding-right: 4.8rem;
+            }
+            .footer__icon {
+                margin-top: 2.4rem;
+                i {
+                    font-size: 1.4rem;
+                    color: white;
+                    display: inline-block;
+                    width: 3.5rem;
+                    height: 3.5rem;
+                    text-align: center;
+                    line-height: 3.5rem;
+                    background-color: $footer-light;
+                    border-radius: 50%;
+                    margin-right: 1rem;
+                }
+            }
+        }
+        .footer__link {
+            width: calc((2/12)*100%);
+        }
+        .footer__services {
+            width: calc((3/12)*100%);
+        }
+        .footer__contact {
+            width: calc((3/12)*100%);
+            li {
+                i {
+                    display: inline-block;
+                    color: #eee;
+                    width: 2.5rem;
+                }
+            }
+        }
+        @include responsive('large') {
+            padding: 4.8rem 0;
+            .h6 {
+                font-size: 2rem;
+            }
+            .footer__about {
+                width: 100%;
+            }
+            .footer__link {
+                width: 50%;
+                margin: 4.8rem 0;
+            }
+            .footer__services {
+                width: 50%;
+                margin: 4.8rem 0;
+            }
+            .footer__contact {
+                width: 100%;
+            }
+        }
+        @include responsive('medium') {
+            .footer__link {
+                width: 100%;
+                margin: 4.8rem 0 0;
+            }
+            .footer__services {
+                width: 50%;
+                margin: 4.8rem 0;
+            }
+            .footer__contact {
+                width: 100%;
+            }
+        }
+    }
+
+    .footer__bottom {
+        background-color: $footer-light;
+        padding: 2rem 0;
+        p {
+            text-align: center;
+            color: #6e747b;
+            font-size: 1.6rem;
+            a {
+                color: white;
+            }
+        }
+    }
+    
+}

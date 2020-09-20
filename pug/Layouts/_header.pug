@@ -1,0 +1,16 @@
+header.header
+    .container
+        .row
+            .header__logo
+                h1
+                    a Livefloor
+            label.header__menu(for="navbar_toggler") 
+                i.fa.fa-bars  
+            input#navbar_toggler(type="checkbox")
+            .header__nav
+                ul
+                    each val in nav_menu
+                        li= val
+                    .clear-left
+            .header__btn
+                a(href="#") Get Free Estimate

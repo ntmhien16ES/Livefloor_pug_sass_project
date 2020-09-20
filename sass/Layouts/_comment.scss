@@ -1,0 +1,49 @@
+.comment {
+    padding: 9.6rem 0;
+    text-align: center;
+    .comment__wraper {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .comment__content {
+        margin: 4.8rem 0 2.7rem;
+        i {
+            font-size: 5rem;
+            color: $secondary-color;
+            margin-bottom: 1rem;
+            line-height: .8;
+        }
+    }
+    .comment__user {
+        img {
+            width: 9rem;
+            height: 9rem;
+            border-radius: 50%;
+            margin-bottom: 2.7rem;
+        }
+        h4 {
+            font-size: 1.8rem;
+            font-weight: 500;
+            color: $heading-color;
+        }
+    }
+    .comment__dots {
+        margin-top: 4.8rem;
+        .row {
+            justify-content: center;
+        }
+        .dots__item {
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            background-color: #d8d8d8;
+            margin: 0 .8rem;
+        }
+        .active {
+            background-color: $secondary-color;
+        }
+    }
+    @include responsive('medium'){
+        padding: 4.8rem 0;
+    }
+}
