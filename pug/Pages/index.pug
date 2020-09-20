@@ -1,38 +1,25 @@
-<!DOCTYPE html>
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Livefloor
-        // GOOGLE FONTS
-        link(rel="stylesheet", href="//fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap")
-        // FONT AWESOME
-        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css")
-        // MAIN CSS
-        link(rel="stylesheet", href="../css/main.css")
-    body
-        //- HELPERS
-        include ../Helpers/_variable.pug
-        include ../Helpers/_mixin.pug
+extends ../Base/_layout.pug
 
-        //- LAYOUT
-        // HEADER
-        include ../Layouts/_header.pug
-        // BANNER
-        include ../Layouts/_banner.pug
-        // NUMBER
-        include ../Layouts/_number.pug
-        // ABOUT US
-        include ../Layouts/_about.pug
-        // PROCESS
-        include ../Layouts/_process.pug
-        // CHOOSE
-        include ../Layouts/_choose.pug
-        // OFFER
-        include ../Layouts/_offer.pug
-        // CONTACT
-        include ../Layouts/_contact.pug
-        // COMMENT
-        include ../Layouts/_comment.pug
-        // FOOTER
-        include ../Layouts/_footer.pug
+block content
+
+    //- LAYOUT
+    // HEADER
+    include ../Layouts/_header.pug
+    // BANNER
+    include ../Layouts/_banner.pug
+    // NUMBER
+    include ../Layouts/_number.pug
+    // ABOUT US
+    include ../Layouts/_about.pug
+    // PROCESS
+    include ../Layouts/_process.pug
+    // CHOOSE
+    include ../Layouts/_choose.pug
+    // OFFER
+    include ../Layouts/_offer.pug
+    // CONTACT
+    include ../Layouts/_contact.pug
+    // COMMENT
+    include ../Layouts/_comment.pug
+    // FOOTER
+    include ../Layouts/_footer.pug
