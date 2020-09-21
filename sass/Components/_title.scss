@@ -1,0 +1,19 @@
+.big-title {
+    @include big-title;
+}
+.sub-title {
+    @include sub-title;
+}
+@include responsive("large") {
+    .big-title {
+        font-size: 3.5rem;
+    }
+}
+@include responsive("medium") {
+    .sub-title {
+        font-size: 1.4rem;
+    }
+    .big-title {
+        font-size: 3.2rem;
+    }
+}
