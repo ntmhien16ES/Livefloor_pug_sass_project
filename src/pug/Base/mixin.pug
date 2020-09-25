@@ -9,12 +9,12 @@ mixin process__item(srcImg, title, desc)
         h4= title
         p= desc
 
-mixin choose__item(iconClass, title, desc)
+mixin choose__item(iconClass, title, desc, link)
     .choose__item
         span(class= iconClass)
         h3= title
         p= desc
-        a(href="#") Read More
+        a(href= link) Read More
             i.fa.fa-arrow-right
         
 mixin footer_contact_item(iconClass, address)
