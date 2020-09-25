@@ -10,7 +10,8 @@ header.header
             .header__nav
                 ul
                     each val in nav_menu
-                        li= val
+                        li
+                            a(href= val.link)= val.title
                     .clear-left
             .header__btn
                 a(href="#") Get Free Estimate

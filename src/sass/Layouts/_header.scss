@@ -17,13 +17,18 @@
             float: left;
             margin: 0 1rem;
             font-weight: 500;
-            color: $logo-color;
+            
             position: relative;
             transition: .3s ease-in;
             cursor: pointer;
-            &:first-child, &:hover {
-                color: $secondary-color;
+            a {
+                color: $logo-color;
                 
+            }
+            &:first-child, &:hover {
+                a {
+                    color: $secondary-color;
+                }
             }
             &::after {
                 content: '';
@@ -81,7 +86,6 @@
                 color: $bg-color;
                 padding: .6rem .8rem;
                 border-radius: 5px;
-                // display: inline-block;
             }
         }
         .header__nav {

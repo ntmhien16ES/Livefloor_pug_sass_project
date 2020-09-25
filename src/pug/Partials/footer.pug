@@ -6,27 +6,26 @@ footer.footer
                     h6 About Company
                     p Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi.Integer sit amet mattis quam.
                     .footer__icon
-                        i.fab.fa-facebook-f
-                        i.fab.fa-twitter
-                        i.fab.fa-instagram
-                        i.fab.fa-linkedin-in
+                        each val in footer__icon
+                            a(href= val.link)
+                                i(class= val.icon)
                 .footer__link
                     h6 Useful Links
                     ul
                         each val in footer__link
                             li
-                                a(href="#")= val
+                                a(href= val.link)= val.title
                 .footer__services
                     h6 Services
                     ul
                         each val in footer__services
                             li
-                                a(href="#")= val
+                                a(href= val.link)= val.title
                 .footer__contact
                     h6 Contact Us
-                    +footer_contact_item("fa fa-map-marker-alt"," Livefloor, #49436 block, #888 Honey rd Newyork")
-                    +footer_contact_item("fa fa-phone"," +(21)-255-999-8888")
-                    +footer_contact_item("fa fa-envelope-open","Livefloor@mail.com")
+                    each val in footer__contact
+                        +footer_contact_item(val.icon,val.content)
+    
     .footer__bottom
         .container
             p © 2020 Livefloor. All rights reserved. Design by 

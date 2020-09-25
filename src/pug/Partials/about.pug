@@ -1,4 +1,4 @@
-section.about
+section.about#about
     .container
         .row
             .about__item
@@ -9,7 +9,6 @@ section.about
                     i.fa.fa-arrow-right
             .about__item
                 .row
-                    .about__img
-                        img(src="../images/ab.jpg", alt="")
-                    .about__img
-                        img(src="../images/ab1.jpg", alt="")
+                    each val in about__img
+                        .about__img
+                            img(src= val.src, alt= val.alt)

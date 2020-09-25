@@ -1,3 +1,6 @@
+include ../Base/variable.pug
+include ../Base/mixin.pug
+
 <!DOCTYPE html>
 html(lang="en")
     head
@@ -9,10 +12,12 @@ html(lang="en")
         // FONT AWESOME
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css")
         // MAIN CSS
-        link(rel="stylesheet", href="../css/main.css")
+        link(rel="stylesheet", href="./assets/css/main.css")
     body
-        //- HELPERS
-        include ../Helpers/_variable.pug
-        include ../Helpers/_mixin.pug
-        
+        // HEAER
+        include ../Partials/header.pug
+
         block content
+
+        //FOOTER
+        include ../Partials/footer.pug
