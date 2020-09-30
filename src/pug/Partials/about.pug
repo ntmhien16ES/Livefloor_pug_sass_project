@@ -2,13 +2,11 @@ section.about#about
     .container
         .row
             .about__item
-                h6.sub-title ABOUT US
-                h3.big-title One-Stop Shop For Everything Interiors
-                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur consequatur.
-                a(href="#") Read More
+                +title(title.about.sub_title,title.about.big_title)
+                a(href="#")= about_link_content
                     i.fa.fa-arrow-right
             .about__item
                 .row
-                    each val in about__img
+                    each val in about_img
                         .about__img
                             img(src= val.src, alt= val.alt)

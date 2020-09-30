@@ -2,15 +2,16 @@ section.contact#contact
     .container
         .contact__content
             .row
-                h3.big-title Meet Our Designer Online
-                h4 Start your home interiors journey online, from the comfort of your home
-                .row.contact__form
-                    .contact__form-item
-                        input(type="text", placeholder= "Name...")
-                    .contact__form-item
-                        input(type="email", placeholder= "Email...")
-                    .contact__form-item
-                        a(href="#") Submit
+                h3.big-title= contact_title.big
+                h4= contact_title.sub
+                form(action="#", method="post")
+                    .row.contact__form
+                        .contact__form-item
+                            input(type="text", placeholder= "Name...")
+                        .contact__form-item
+                            input(type="email", placeholder= "Email...")
+                        .contact__form-item
+                            button(type="submit")= contact_btn_content
                 p By submitting this form, you agree to the 
                     a(href="#") privacy policy 
                     | and 

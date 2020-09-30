@@ -1,5 +1,5 @@
 .footer {
-    .footer__top {
+    &__top {
         padding: 9.6rem 0;
         background-color: $footer-bg;
         .row {
@@ -94,7 +94,7 @@
         }
     }
 
-    .footer__bottom {
+    &__bottom {
         background-color: $footer-light;
         padding: 2rem 0;
         p {

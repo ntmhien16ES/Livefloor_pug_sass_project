@@ -1,4 +1,14 @@
+-
+    var title = {
+        about: {sub_title:"ABOUT US", big_title:"One-Stop Shop For Everything Interiors", desc:""},
+        process: {sub_title:"PROCESS", big_title:"How It Works", desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit."},
+        choose: {sub_title:"WHY CHOOSE US", big_title:"Why Meet Us Online", desc:""},
+        offer: {sub_title:"WHAT WE DO", big_title:"What We Offer For You", desc:"Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
+        comment: {sub_title:"HERE’S WHAT THEY HAVE TO SAY", big_title:"Our Clients Do The Talking", desc:""}
+    }
 //- HEADER
+- var header_logo = "Livefloor";
+- var header_btn_content = "Get Free Estimate";
 -
     var nav_menu = [
         {title: "Home", link: "#"},
@@ -6,6 +16,13 @@
         {title: "Services", link: "#service"},
         {title: "Contact", link: "#contact"}
         ]
+//- SLIDER
+-
+    var slider__item = [
+        {title:"Stylish designs", content:"Interiors that reflect your style.",link:"#"},
+        {title:"Home decoration", content:"Interior designs from the future.",link:"#"},
+        {title:"Home decoration", content:"Interior designs from the future.",link:"#"}
+    ]
 //- NUMBER
 -
     var number__item = [
@@ -15,17 +32,18 @@
         {number:"990", title:"Awards"}
     ]
 //- ABOUT
+- var about_link_content = "Read More";
 -
-    var about__img = [
+    var about_img = [
         {src: "./assets/images/ab.jpg", alt: "about image 1"},
         {src: "./assets/images/ab1.jpg", alt: "about image 2"}
     ]
 //- PROCESS
 -
     var process__item = [
-        {src: "./assets/images/g1.jpg", title: "1. Show Us Your Space", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur consequatur."},
-        {src: "./assets/images/g2.jpg", title: "2. Get Custom Design Plans", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur consequatur."},
-        {src: "./assets/images/g3.jpg", title: "3. Shop with Confidence", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur consequatur."}
+        {src: "./assets/images/g1.jpg", title: "1. Show Us Your Space", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur consequatur.", link:"#"},
+        {src: "./assets/images/g2.jpg", title: "2. Get Custom Design Plans", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur consequatur.", link:"#"},
+        {src: "./assets/images/g3.jpg", title: "3. Shop with Confidence", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur consequatur.", link:"#"}
     ]
 //- CHOOSE
 -
@@ -37,17 +55,38 @@
     ]
 //- OFFER
 - var offer_list = ['Full home interiors','Modular solutions','Catalogue products','Installation']
-
+//- CONTACT
+- var contact_btn_content = "Submit";
+-
+    var contact_title = {
+        big: "Meet Our Designer Online",
+        sub: "Start your home interiors journey online, from the comfort of your home"
+    }
+//- COMMENT
+-
+    var comment_item = [
+        {content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi. Integer sit amet .Lorem ipsum dolor sit amet adipisicing elit. Laborum dolor facere ipsum adipisicingelit.",srcImg:"./assets/images/c1.jpg",alt:"user1",name:"Rohit Paul"},
+        {content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi. Integer sit amet .Lorem ipsum dolor sit amet adipisicing elit. Laborum dolor facere ipsum adipisicingelit.",srcImg:"./assets/images/c2.jpg",alt:"user2",name:"Rohit Paul"},
+        {content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi. Integer sit amet .Lorem ipsum dolor sit amet adipisicing elit. Laborum dolor facere ipsum adipisicingelit.",srcImg:"./assets/images/c3.jpg",alt:"user3",name:"Rohit Paul"},
+        {content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi. Integer sit amet .Lorem ipsum dolor sit amet adipisicing elit. Laborum dolor facere ipsum adipisicingelit.",srcImg:"./assets/images/c4.jpg",alt:"user4",name:"Rohit Paul"}
+    ]
 //- FOOTER
 -
-    var footer__link = [
+    var footer_title = {
+        about: {title:"About Company",desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi.Integer sit amet mattis quam."},
+        link: "Useful Links",
+        services: "Services",
+        contact: "Contact Us"
+    }
+-
+    var footer_link = [
         {title:"Home", link: "#"},
         {title:"Services", link: "#service"},
         {title:"Blog posts", link: "#"},
         {title:"Contact us", link: "#contact"}
     ]
 -
-    var footer__services = [
+    var footer_services = [
         {title:"Furniture Chairs", link: "#"},
         {title:"Three Seater Sofas", link: "#"},
         {title:"Dining Tables", link: "#"},
@@ -56,14 +95,14 @@
         ]
 
 -
-    var footer__contact = [
+    var footer_contact = [
         {icon: "fa fa-map-marker-alt", content: "Livefloor, #49436 block, #888 Honey rd Newyork"},
         {icon: "fa fa-phone", content: "+(21)-255-999-8888"},
         {icon: "fa fa-envelope-open", content: "Livefloor@mail.com"}
     ]
 
 -
-    var footer__icon = [
+    var footer_icon = [
         {link: "#", icon: "fab fa-facebook-f"},
         {link: "#", icon: "fab fa-twitter"},
         {link: "#", icon: "fab fa-instagram"},

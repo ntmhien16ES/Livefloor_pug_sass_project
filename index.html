@@ -34,15 +34,41 @@
         </div>
       </div>
     </header>
-    <!-- BANNER-->
-    <section class="banner">
-      <div class="container">
-        <div class="row">
-          <div class="banner__content">
-            <p>Stylish designs</p>
-            <h5>Interiors that reflect your style.</h5><a href="#">View Details <i class="fa fa-long-arrow-alt-right"></i></a>
+    <!-- SLIDER-->
+    <section class="slider">
+      <input type="radio" id="slider_1" name="slider_radio"/>
+      <input type="radio" id="slider_2" name="slider_radio"/>
+      <input type="radio" id="slider_3" name="slider_radio"/>
+      <div class="slider__content">
+        <div class="slider__item">
+          <div class="container">
+            <div class="slider__text">
+              <p>Stylish designs</p>
+              <h5>Interiors that reflect your style.</h5><a href="#">View Details <i class="fa fa-long-arrow-alt-right"></i></a>
+            </div>
           </div>
         </div>
+        <div class="slider__item">
+          <div class="container">
+            <div class="slider__text">
+              <p>Home decoration</p>
+              <h5>Interior designs from the future.</h5><a href="#">View Details <i class="fa fa-long-arrow-alt-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="container">
+            <div class="slider__text">
+              <p>Home decoration</p>
+              <h5>Interior designs from the future.</h5><a href="#">View Details <i class="fa fa-long-arrow-alt-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider__nav">
+        <label for="slider_1"></label>
+        <label for="slider_2"></label>
+        <label for="slider_3"></label>
       </div>
     </section>
     <!-- NUMBER-->
@@ -75,7 +101,7 @@
           <div class="about__item">
             <h6 class="sub-title">ABOUT US</h6>
             <h3 class="big-title">One-Stop Shop For Everything Interiors</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur consequatur.</p><a href="#">Read More<i class="fa fa-arrow-right"></i></a>
+            <p></p><a href="#">Read More<i class="fa fa-arrow-right"></i></a>
           </div>
           <div class="about__item">
             <div class="row">
@@ -90,23 +116,20 @@
     <section class="process">
       <div class="container">
         <div class="process__title">
-          <h6 class="sub-title">Process</h6>
+          <h6 class="sub-title">PROCESS</h6>
           <h3 class="big-title">How It Works</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div class="process__content row">
-          <div class="process__item"><img src="./assets/images/g1.jpg" alt=""/>
-            <h4>1. Show Us Your Space</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur consequatur.</p>
-          </div>
-          <div class="process__item"><img src="./assets/images/g2.jpg" alt=""/>
-            <h4>2. Get Custom Design Plans</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur consequatur.</p>
-          </div>
-          <div class="process__item"><img src="./assets/images/g3.jpg" alt=""/>
-            <h4>3. Shop with Confidence</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur consequatur.</p>
-          </div>
+          <div class="process__item"><a href="#"><img src="./assets/images/g1.jpg" alt=""/>
+              <h4>1. Show Us Your Space</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur consequatur.</p></a></div>
+          <div class="process__item"><a href="#"><img src="./assets/images/g2.jpg" alt=""/>
+              <h4>2. Get Custom Design Plans</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur consequatur.</p></a></div>
+          <div class="process__item"><a href="#"><img src="./assets/images/g3.jpg" alt=""/>
+              <h4>3. Shop with Confidence</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur consequatur.</p></a></div>
         </div>
       </div>
     </section>
@@ -116,6 +139,7 @@
         <div class="choose__title">
           <h6 class="sub-title">WHY CHOOSE US</h6>
           <h3 class="big-title">Why Meet Us Online</h3>
+          <p></p>
         </div>
         <div class="row">
           <div class="choose__item"><span class="fa fa-arrows-alt"></span>
@@ -167,15 +191,19 @@
           <div class="row">
             <h3 class="big-title">Meet Our Designer Online</h3>
             <h4>Start your home interiors journey online, from the comfort of your home</h4>
-            <div class="row contact__form">
-              <div class="contact__form-item">
-                <input type="text" placeholder="Name..."/>
+            <form action="#" method="post">
+              <div class="row contact__form">
+                <div class="contact__form-item">
+                  <input type="text" placeholder="Name..."/>
+                </div>
+                <div class="contact__form-item">
+                  <input type="email" placeholder="Email..."/>
+                </div>
+                <div class="contact__form-item">
+                  <button type="submit">Submit</button>
+                </div>
               </div>
-              <div class="contact__form-item">
-                <input type="email" placeholder="Email..."/>
-              </div>
-              <div class="contact__form-item"><a href="#">Submit</a></div>
-            </div>
+            </form>
             <p>By submitting this form, you agree to the <a href="#">privacy policy </a>and <a href="#">terms of use</a></p>
           </div>
         </div>
@@ -184,23 +212,52 @@
     <!-- COMMENT-->
     <section class="comment">
       <div class="container">
+        <h6 class="sub-title">HERE’S WHAT THEY HAVE TO SAY</h6>
+        <h3 class="big-title">Our Clients Do The Talking</h3>
+        <p></p>
+        <input type="radio" id="comment_1" name="comment_radio" checked="true"/>
+        <input type="radio" id="comment_2" name="comment_radio"/>
+        <input type="radio" id="comment_3" name="comment_radio"/>
+        <input type="radio" id="comment_4" name="comment_radio"/>
         <div class="comment__wraper">
-          <h6 class="sub-title">HERE’S WHAT THEY HAVE TO SAY</h6>
-          <h3 class="big-title">Our Clients Do The Talking</h3>
-          <blockquote class="comment__content"><i class="fa fa-quote-left"></i>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi. Integer sit amet .Lorem ipsum dolor sit amet adipisicing elit. Laborum dolor facere ipsum adipisicingelit.</p>
-          </blockquote>
-          <div class="comment__user"><img src="./assets/images/c1.jpg" alt=""/>
-            <h4>Rohit Paul</h4>
-          </div>
-          <div class="comment__dots">
-            <div class="row">
-              <div class="dots__item active"></div>
-              <div class="dots__item"></div>
-              <div class="dots__item"></div>
-              <div class="dots__item"></div>
-            </div>
-          </div>
+              <div class="comment__item">
+                <blockquote class="comment__content"><i class="fa fa-quote-left"></i>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi. Integer sit amet .Lorem ipsum dolor sit amet adipisicing elit. Laborum dolor facere ipsum adipisicingelit.</p>
+                </blockquote>
+                <div class="comment__user"><img src="./assets/images/c1.jpg" alt="user1"/>
+                  <h4>Rohit Paul</h4>
+                </div>
+              </div>
+              <div class="comment__item">
+                <blockquote class="comment__content"><i class="fa fa-quote-left"></i>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi. Integer sit amet .Lorem ipsum dolor sit amet adipisicing elit. Laborum dolor facere ipsum adipisicingelit.</p>
+                </blockquote>
+                <div class="comment__user"><img src="./assets/images/c2.jpg" alt="user2"/>
+                  <h4>Rohit Paul</h4>
+                </div>
+              </div>
+              <div class="comment__item">
+                <blockquote class="comment__content"><i class="fa fa-quote-left"></i>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi. Integer sit amet .Lorem ipsum dolor sit amet adipisicing elit. Laborum dolor facere ipsum adipisicingelit.</p>
+                </blockquote>
+                <div class="comment__user"><img src="./assets/images/c3.jpg" alt="user3"/>
+                  <h4>Rohit Paul</h4>
+                </div>
+              </div>
+              <div class="comment__item">
+                <blockquote class="comment__content"><i class="fa fa-quote-left"></i>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi. Integer sit amet .Lorem ipsum dolor sit amet adipisicing elit. Laborum dolor facere ipsum adipisicingelit.</p>
+                </blockquote>
+                <div class="comment__user"><img src="./assets/images/c4.jpg" alt="user4"/>
+                  <h4>Rohit Paul</h4>
+                </div>
+              </div>
+        </div>
+        <div class="comment__dots">
+          <label for="comment_1"></label>
+          <label for="comment_2"></label>
+          <label for="comment_3"></label>
+          <label for="comment_4"></label>
         </div>
       </div>
     </section>

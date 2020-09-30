@@ -1,14 +1,14 @@
 .process {
     padding: 9.6rem 0;
-    .process__title {
-        margin-bottom: 4.8rem;
-    }
     .row {
         justify-content: space-between;
         margin-right: -15px;
         margin-left: -15px;
     }
-    .process__item {
+    &__title {
+        margin-bottom: 4.8rem;
+    }
+    &__item {
         width: calc(100%/3);
         padding: 0 1.5rem;
         img {
@@ -24,13 +24,14 @@
         }
         p {
             margin-top: .8rem;
+            color: $font-color;
         }
     }
     @include responsive('large') {
-        .process__title {
+        &__title {
             margin: 0;
         }
-        .process__item {
+        &__item {
             margin-top: 4.8rem;
             width: 100%;
         }

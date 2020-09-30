@@ -3,27 +3,27 @@ footer.footer
         .container
             .row
                 .footer__about
-                    h6 About Company
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi.Integer sit amet mattis quam.
+                    h6= footer_title.about.title
+                    p= footer_title.about.desc
                     .footer__icon
-                        each val in footer__icon
+                        each val in footer_icon
                             a(href= val.link)
                                 i(class= val.icon)
                 .footer__link
-                    h6 Useful Links
+                    h6= footer_title.link
                     ul
-                        each val in footer__link
+                        each val in footer_link
                             li
                                 a(href= val.link)= val.title
                 .footer__services
-                    h6 Services
+                    h6= footer_title.services
                     ul
-                        each val in footer__services
+                        each val in footer_services
                             li
                                 a(href= val.link)= val.title
                 .footer__contact
-                    h6 Contact Us
-                    each val in footer__contact
+                    h6= footer_title.contact
+                    each val in footer_contact
                         +footer_contact_item(val.icon,val.content)
     
     .footer__bottom

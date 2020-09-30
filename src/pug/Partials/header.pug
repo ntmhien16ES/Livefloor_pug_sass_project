@@ -3,7 +3,7 @@ header.header
         .row
             .header__logo
                 h1
-                    a Livefloor
+                    a= header_logo
             label.header__menu(for="navbar_toggler") 
                 i.fa.fa-bars  
             input#navbar_toggler(type="checkbox")
@@ -14,4 +14,4 @@ header.header
                             a(href= val.link)= val.title
                     .clear-left
             .header__btn
-                a(href="#") Get Free Estimate
+                a(href="#")= header_btn_content

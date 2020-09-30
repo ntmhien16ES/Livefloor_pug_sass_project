@@ -1,9 +1,7 @@
 section.process
     .container
         .process__title
-            h6.sub-title Process
-            h3.big-title How It Works
-            p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            +title(title.process.sub_title,title.process.big_title,title.process.desc)
         .process__content.row
             each val in process__item
-                +process__item(val.src, val.title, val.desc)
+                +process__item(val.src, val.title, val.desc, val.link)

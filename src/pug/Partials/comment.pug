@@ -1,17 +1,24 @@
+mixin comment__item(content,srcImg,alt,name)
+    .comment__item
+        blockquote.comment__content
+            i.fa.fa-quote-left
+            p= content
+        .comment__user
+            img(src= srcImg, alt= alt)
+            h4= name
 section.comment
     .container
+        +title(title.comment.sub_title,title.comment.big_title)
+
+        input(type="radio", id="comment_1", name="comment_radio", checked="true")
+        input(type="radio", id="comment_2", name="comment_radio")
+        input(type="radio", id="comment_3", name="comment_radio")
+        input(type="radio", id="comment_4", name="comment_radio")
         .comment__wraper
-            h6.sub-title HERE’S WHAT THEY HAVE TO SAY
-            h3.big-title Our Clients Do The Talking
-            blockquote.comment__content
-                i.fa.fa-quote-left
-                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi. Integer sit amet .Lorem ipsum dolor sit amet adipisicing elit. Laborum dolor facere ipsum adipisicingelit.
-            .comment__user
-                img(src="./assets/images/c1.jpg", alt="")
-                h4 Rohit Paul
-            .comment__dots
-                .row
-                    .dots__item.active
-                    .dots__item
-                    .dots__item
-                    .dots__item
+            each item in comment_item
+                +comment__item(item.content, item.srcImg, item.alt, item.name)
+        .comment__dots
+            label(for="comment_1")
+            label(for="comment_2")
+            label(for="comment_3")
+            label(for="comment_4")

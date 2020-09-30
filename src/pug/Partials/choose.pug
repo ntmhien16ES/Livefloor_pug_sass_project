@@ -1,8 +1,7 @@
 section.choose
     .container
         .choose__title
-            h6.sub-title WHY CHOOSE US
-            h3.big-title Why Meet Us Online
+            +title(title.choose.sub_title,title.choose.big_title)
         .row
             each val in choose__item
                 +choose__item(val.icon, val.title, val.desc, val.link)

@@ -1,13 +1,29 @@
+mixin title(sub_title, big_title, desc)
+    h6.sub-title= sub_title
+    h3.big-title= big_title
+    if desc != ""
+        p= desc
+
+mixin slider__item(title, content, link)
+    .slider__item
+        .container
+            .slider__text
+                p= title
+                h5= content
+                a(href= link) View Details 
+                    i.fa.fa-long-arrow-alt-right
+                    
 mixin number__item(num, title)
     .number__item
         p= num
         h4= title 
 
-mixin process__item(srcImg, title, desc)
+mixin process__item(srcImg, title, desc, link)
     .process__item
-        img(src= srcImg, alt="")
-        h4= title
-        p= desc
+        a(href= link)
+            img(src= srcImg, alt="")
+            h4= title
+            p= desc
 
 mixin choose__item(iconClass, title, desc, link)
     .choose__item

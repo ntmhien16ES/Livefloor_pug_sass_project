@@ -1,0 +1,11 @@
+section.slider
+    input(type="radio", id="slider_1", name="slider_radio")
+    input(type="radio", id="slider_2", name="slider_radio")
+    input(type="radio", id="slider_3", name="slider_radio")
+    .slider__content
+        each item in slider__item
+            +slider__item(item.title, item.content, item.link)
+    .slider__nav
+        label(for="slider_1")
+        label(for="slider_2")
+        label(for="slider_3")

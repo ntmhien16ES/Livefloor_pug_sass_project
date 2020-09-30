@@ -4,7 +4,7 @@
     .row {
         justify-content: space-around;
     }
-    .number__item {
+    &__item {
         width: calc(100%/4);
         padding: 0 1.5rem;
         p {
@@ -23,7 +23,7 @@
         }
     }
     @include responsive('small-large') {
-        .number__item {
+        &__item {
             width: calc(100%/2);
             margin: 15px 0;
         }

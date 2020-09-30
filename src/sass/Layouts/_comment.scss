@@ -1,12 +1,38 @@
 .comment {
     padding: 9.6rem 0;
     text-align: center;
-    .comment__wraper {
-        max-width: 800px;
-        margin: 0 auto;
+    overflow: hidden;
+    input {
+        display: none;
     }
-    .comment__content {
+    &__wraper {
+        display: flex;
+        transform: translateX(-100%);
+        transition: all .3s;
+    }
+    #comment_1:checked ~ .comment__wraper {
+        transform: translateX(0%)
+    }
+    #comment_2:checked ~ .comment__wraper {
+        transform: translateX(-100%)
+    }
+    #comment_3:checked ~ .comment__wraper {
+        transform: translateX(-200%)
+    }
+    #comment_4:checked ~ .comment__wraper {
+        transform: translateX(-300%)
+    }
+    &__item {
         margin: 4.8rem 0 2.7rem;
+        display: block;
+        min-width: 100%;
+    }
+    &__content {
+        width: 60%;
+        margin: 0 auto;
+        p {
+            margin: 1.5rem;
+        }
         i {
             font-size: 5rem;
             color: $secondary-color;
@@ -14,7 +40,7 @@
             line-height: .8;
         }
     }
-    .comment__user {
+    &__user {
         img {
             width: 9rem;
             height: 9rem;
@@ -27,23 +53,24 @@
             color: $heading-color;
         }
     }
-    .comment__dots {
-        margin-top: 4.8rem;
-        .row {
-            justify-content: center;
-        }
-        .dots__item {
+    &__dots {
+        label {
+            margin-top: 4.8rem;
+            display: inline-block;
             width: 1rem;
             height: 1rem;
             border-radius: 50%;
-            background-color: #d8d8d8;
+            background-color: #949494;
             margin: 0 .8rem;
-        }
-        .active {
-            background-color: $secondary-color;
+            &:hover {
+                background-color: $secondary-color;
+            }
         }
     }
     @include responsive('medium'){
         padding: 4.8rem 0;
+        &__item {
+            margin: 3rem 0 2rem;
+        }
     }
 }

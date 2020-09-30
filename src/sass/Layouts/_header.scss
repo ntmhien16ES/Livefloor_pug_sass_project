@@ -74,10 +74,10 @@
         .row {
             justify-content: space-between;
         }
-        .header__btn {
+        &__btn {
             display: none;
         }
-        .header__menu {
+        &__menu {
             display: block;
             height: 20px;
             i {
@@ -88,7 +88,7 @@
                 border-radius: 5px;
             }
         }
-        .header__nav {
+        &__nav {
             display: none;
             height: 0;
             transition: .5s ease-in;
