@@ -7,20 +7,20 @@
     }
     &__wraper {
         display: flex;
-        transform: translateX(-100%);
+        @include transform(translateX(-100%));
         transition: all .3s;
     }
     #comment_1:checked ~ .comment__wraper {
-        transform: translateX(0%)
+        @include transform(translateX(0%));
     }
     #comment_2:checked ~ .comment__wraper {
-        transform: translateX(-100%)
+        @include transform(translateX(-100%));
     }
     #comment_3:checked ~ .comment__wraper {
-        transform: translateX(-200%)
+        @include transform(translateX(-200%));
     }
     #comment_4:checked ~ .comment__wraper {
-        transform: translateX(-300%)
+        @include transform(translateX(-300%));
     }
     &__item {
         margin: 4.8rem 0 2.7rem;
@@ -34,32 +34,25 @@
             margin: 1.5rem;
         }
         i {
-            font-size: 5rem;
-            color: $secondary-color;
+            @include text($secondary-color, 5rem, .8);
             margin-bottom: 1rem;
-            line-height: .8;
         }
     }
     &__user {
         img {
-            width: 9rem;
-            height: 9rem;
-            border-radius: 50%;
+            @include size(9rem);
+            @include border-radius(50%);
             margin-bottom: 2.7rem;
         }
         h4 {
-            font-size: 1.8rem;
-            font-weight: 500;
-            color: $heading-color;
+            @include text($heading-color, 1.8rem, false, 500);
         }
     }
     &__dots {
         label {
-            margin-top: 4.8rem;
             display: inline-block;
-            width: 1rem;
-            height: 1rem;
-            border-radius: 50%;
+            @include size(1rem);
+            @include border-radius(50%);
             background-color: #949494;
             margin: 0 .8rem;
             &:hover {

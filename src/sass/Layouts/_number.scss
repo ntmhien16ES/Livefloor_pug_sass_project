@@ -5,26 +5,20 @@
         justify-content: space-around;
     }
     &__item {
-        width: calc(100%/4);
+        width: (1/4)*100%;
         padding: 0 1.5rem;
         p {
-            font-size: 5rem;
-            line-height: 6rem;
-            font-weight: 700;
-            color: $secondary-color;
+            @include text($secondary-color, 5rem, 6rem, 700);
             margin: 1.5rem 0;
         }
         h4 {
-            font-size: 2rem;
-            line-height: 2.5rem;
-            color: $font-color;
+            @include text($font-color, 2rem, 2.5rem, 300);
             opacity: .8;
-            font-weight: 300;
         }
     }
     @include responsive('small-large') {
         &__item {
-            width: calc(100%/2);
+            width: (1/2)*100%;
             margin: 15px 0;
         }
     }

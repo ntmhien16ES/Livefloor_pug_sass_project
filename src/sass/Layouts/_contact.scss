@@ -2,8 +2,8 @@
     padding: 9.6rem 0;
     position: relative;
     background-image: url(../images/banner1.jpg);
-    background-size: cover;
     background-position: center;
+    background-size: cover;
     z-index: 0;
     &::before {
         content: '';
@@ -24,11 +24,9 @@
             color: white;
         }
         h4 {
-            font-size: 2rem;
+            @include text(inherit, 2rem, 2.8rem, 300);
             opacity: .9;
-            font-weight: 300;
             letter-spacing: 1px;
-            line-height: 2.8rem;
             margin: .8rem 0;
         }
         p {
@@ -46,14 +44,13 @@
         }
         &-item {
             padding: 4rem 8px 0;
-            width: calc(100%/3);
+            width: (1/3)*100%;
         }
         input {
-            width: 100%;
-            height: 6rem;
+            @include size(100%,6rem);
             color: $heading-color;
             font-size: 1.6rem;
-            border-radius: $border-radius-1;
+            @include border-radius($border-radius-1);
             padding: 0 1.6rem;
             background-color: white;
             border: none;
@@ -63,15 +60,11 @@
         }
         button {
             text-align: center;
-            width: 100%;
-            height: 6rem;
             display: inline-block;
-            font-size: 1.6rem;
-            color: white;
             background-color: $secondary-color;
-            line-height: 4rem;
-            font-weight: 500;
-            border-radius: $border-radius-1;
+            // @include text(white, 1.6rem, 4rem, 500);
+            @include size(100%,6rem);
+            @include border-radius($border-radius-1);
             &:hover {
                 opacity: 1;
             }

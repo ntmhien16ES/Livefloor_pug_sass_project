@@ -1,7 +1,7 @@
 section.process
     .container
         .process__title
-            +title(title.process.sub_title,title.process.big_title,title.process.desc)
+            +title(title.process.sub,title.process.big,title.process.desc)
         .process__content.row
             each val in process__item
                 +process__item(val.src, val.title, val.desc, val.link)

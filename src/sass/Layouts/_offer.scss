@@ -10,7 +10,7 @@
         &:first-child {
             padding-right: 4.8rem;
             img {
-                border-radius: 10px;
+                @include border-radius(10px);
             }
         }
         p {
@@ -22,12 +22,11 @@
                 color: $heading-color;
                 font-weight: 700;
                 i {
-                    font-size: 1rem;
+                    @include text($secondary-color, 1rem);
                     margin-right: 1.2rem;
-                    color: $secondary-color;
                     background-color: $bg-light;
                     padding: .8rem;
-                    border-radius: 50%;
+                    @include border-radius(50%)
                 }
             }
         }

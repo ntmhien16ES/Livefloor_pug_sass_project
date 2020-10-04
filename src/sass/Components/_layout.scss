@@ -6,11 +6,7 @@
     margin-left: auto;
 }
 .row {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
+    @include flex(row, flex-start, center, wrap);
 }
 @include responsive("extra-large") {
     .container {

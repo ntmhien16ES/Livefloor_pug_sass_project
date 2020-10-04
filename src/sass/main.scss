@@ -1,6 +1,7 @@
 // Base
 @import "./Base/variable";
 @import "./Base/mixin";
+@import "./Base/placeholders";
 @import "./Base/reset";
 @import "./Base/global";
 
@@ -9,8 +10,9 @@
 @import "./Layouts/footer";
 
 // Components
-@import "./Components/flexLayout";
+@import "./Components/layout";
 @import "./Components/title";
+@import "./Components/button";
 
 // Pages
 @import "./Pages/index";

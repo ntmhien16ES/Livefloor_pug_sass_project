@@ -1,8 +1,8 @@
 .big-title {
-    @include big-title;
+    @extend %big-title;
 }
 .sub-title {
-    @include sub-title;
+    @extend %sub-title;
 }
 @include responsive("large") {
     .big-title {

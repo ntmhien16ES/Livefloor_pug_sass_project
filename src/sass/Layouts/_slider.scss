@@ -1,15 +1,13 @@
 .slider {
     overflow: hidden;
+    position: relative;
     &__nav {
-        position: absolute;
-        bottom: 6rem;
-        left: 50%;
-        transform: translateX(-50%);
+        @include centerAbsolute(left);
+        bottom: 2rem;
         z-index: 3;
         label {
             display: inline-block;
-            width: 1.2rem;
-            height: 1.2rem;
+            @include size(1.2rem);
             background-color: #fff;
             border-radius: 50%;
             margin: .7rem;
@@ -24,21 +22,22 @@
     &__content {
         display: flex;
         transition: all .3s;
-        transform: translateX(0);
+        @include transform(translateX(0));
     }
     #slider_1:checked ~ .slider__content {
-        transform: translateX(0%)
+        @include transform(translateX(0));
     }
     #slider_2:checked ~ .slider__content {
-        transform: translateX(-100%)
+        transform: translateX(-100%);
+        @include transform(translateX(-100%));
     }
     #slider_3:checked ~ .slider__content {
-        transform: translateX(-200%)
+        @include transform(translateX(-200%));
     }
     &__item {
         background-position: center;
         background-size: cover;
-        height: calc(100vh - 4rem);
+        height: calc(100vh - 40px);
         min-width: 100%;
         position: relative;
         &:nth-child(1){
@@ -66,9 +65,7 @@
         width: 60%;
         color: white;
         z-index: 2;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+        @include centerAbsolute(top);
         p {
             text-transform: uppercase;
             font-weight: 300;
@@ -77,22 +74,18 @@
             margin-top: .6rem;
         }
         h5 {
-            font-size: 8.2rem;
-            font-weight: 700;
+            @include text(inherit, 8.2rem, 9.2rem, 700);
             text-transform: capitalize;
-            line-height: 9.2rem;
             margin-bottom: 2rem;
         }
         a {
-            color: white;
-            font-size: 1.7rem;
-            font-weight: 600;
+            @include text(white, 1.7rem, false, 600);
             margin-top: 2rem;
+            padding-bottom: 3px;
             text-transform: capitalize;
             border-bottom: 2px solid #fff;
             transition: .3s ease-in-out;
             letter-spacing: 1px;
-            padding-bottom: 3px;
             &:hover {
                 color: $secondary-color;
                 border-color: $secondary-color;
@@ -100,6 +93,7 @@
         }
     }
     @include responsive("extra-large") {
+        height: calc(100vh - 6rem);
         &__content {
             p {
                 font-size: 1.5rem;
@@ -111,6 +105,7 @@
         }
     }
     @include responsive("large") {
+        height: calc(100vh - 8rem);
         &__content {
             p {
                 font-size: 1.5rem;
@@ -122,6 +117,7 @@
         }
     }
     @include responsive("medium") {
+        height: calc(100vh - 10rem);
         &__content {
             p {
                 font-size: 1.4rem;

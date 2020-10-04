@@ -1,0 +1,26 @@
+%sub-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    color: $secondary-color;
+    margin-bottom: 1rem;
+}
+%big-title {
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 4.8rem;
+    text-transform: capitalize;
+    color: $heading-color;
+}
+%readMore {
+    font-size: 1.7rem;
+    color: $heading-color;
+    font-weight: 500;
+    padding-bottom: 5px;
+    border-bottom: 2px solid $secondary-color;
+    i {
+        padding-left: 5px;
+    }
+}
