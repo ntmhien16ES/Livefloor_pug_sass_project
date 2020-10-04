@@ -8,9 +8,9 @@ mixin comment__item(content,srcImg,alt,name)
             h4= name
 section.comment
     .container
-        +title(title.comment.sub_title,title.comment.big_title)
+        +title(title.comment.sub,title.comment.big)
 
-        input(type="radio", id="comment_1", name="comment_radio", checked="true")
+        input(type="radio", id="comment_1", name="comment_radio")
         input(type="radio", id="comment_2", name="comment_radio")
         input(type="radio", id="comment_3", name="comment_radio")
         input(type="radio", id="comment_4", name="comment_radio")
