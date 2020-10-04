@@ -1,7 +1,9 @@
+// Helpers
+@import "./Helpers/variable";
+@import "./Helpers/placeholders";
+@import "./Helpers/mixin";
+
 // Base
-@import "./Base/variable";
-@import "./Base/mixin";
-@import "./Base/placeholders";
 @import "./Base/reset";
 @import "./Base/global";
 
